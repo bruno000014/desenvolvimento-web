@@ -1,4 +1,4 @@
-body{
+*{
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -11,12 +11,24 @@ a{
 header{
     margin: 0;
     padding: 0;
-    background-color: #57C492;
+    background-color: #016ea7;
     padding: 8px;
     display: flex;
     justify-content:space-between;
     align-items: center;
     
+}
+
+.user{
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-right: 20px;
+}
+
+.user img{
+    width: 60px;
 }
 
 
@@ -28,32 +40,87 @@ header{
 
 
 h2{
-    color: #57C492;
+    color: #016ea7;
     padding: 15px;
     display: flex;
     justify-content: center;
+}
+
+.form_retirada{
+    width: 1000px;
+    margin: 4rem auto;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+.agrupamento_retirada{
+    color: #016ea7;
+    display: flex;
+    font-size: 15px;
+    flex-direction:row;
+    justify-content: center;
+    border: 1px solid #016ea7;
+    padding: 3rem;
+    box-shadow: 0px 1px 10px #016ea7; 
+    align-items: center;
+}
+.date{
+    width: 50px;
+}
+
+.agrupamento_retirada input{
+    font-size: 15px;
+    color: black;
+    width: 100px;
+    padding: 1.0rem;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    border: 1px solid #016ea7;
+    border-radius: 8px;
+    margin: 5px;
+}
+
+.date_time{
+    flex-direction: row;
+
+
 }
 .agrupamento_carros{
     display: flex;
     align-items: center;
    justify-content: center;
+   margin: 30px;
 }
 
+.agrupamento_carros p{
+    padding: 3px;
+}
+
+.agrupamento_carros input[type="submit"]{
+    width: 250px;
+}
+
+.agrupamento_carros input[type="submit"]:hover{
+    background-color: #00AADB;
+}
 .car1{
     background-color: transparent;
     color: black;
     display: flex;
     width: 200px;
     margin: 15px;
-    height: 250px;
+    height: 200px;
     margin-top: 10px;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    border: 1px solid gray;
+    justify-content: center;
+    border: 1px solid #016ea7;
     padding: 5rem;
     border-radius: 8px;
-    box-shadow: 0px 1px 10px gray;
+    box-shadow: 0px 1px 10px #016ea7;
 }
 
 .car2{
@@ -62,14 +129,14 @@ h2{
     display: flex;
     width: 200px;
     margin: 15px;
-    height: 250px;
+    height: 200px;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    border: 1px solid gray;
+    justify-content: center;
+    border: 1px solid #016ea7;
     padding: 5rem;
     border-radius: 8px;
-    box-shadow: 0px 1px 10px gray;
+    box-shadow: 0px 1px 10px #016ea7;
 }
 
 .car3{
@@ -78,19 +145,526 @@ h2{
     display: flex;
     width: 200px;
     margin: 15px;
-    height: 250px;
+    height: 200px;
     flex-direction:column;
     align-items: center;
-    justify-content: space-between;
-    border: 1px solid gray;
+    justify-content: center;
+    border: 1px solid #016ea7;
     padding: 5rem;
     border-radius: 8px;
-    box-shadow: 0px 1px 10px gray;
+    box-shadow: 0px 1px 10px #016ea7;
+}
+
+.car4{
+    background-color: transparent;
+    color: black;
+    display: flex;
+    width: 200px;
+    margin: 15px;
+    height: 200px;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #016ea7;
+    padding: 5rem;
+    border-radius: 8px;
+    box-shadow: 0px 1px 10px #016ea7;
+}
+
+.acessar{
+    justify-content: end;
+    margin-top: 20px;
 }
 
 input[type="submit"]{
     color: #fff;
+    width: 200px;
+    font-size: 15px;
+    padding: 1.0rem;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #016ea7;
+    border: 0;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.nossos_contatos li{
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+h3{
+    color: #016ea7;
+    margin-left: 10px;
+}
+
+.nossos_contatos a{
+    color: #016ea7;
+}
+.nossos_contatos a:hover{
+    color:#fff;
+}
+
+
+.nossos_contatos{
+    background-color: #acd1e4;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+    width: 100%;
+}
+
+.institucional{
+    margin: 20px;
+    padding: 15px;
+}
+
+.institucional h4{
+    margin-left: 10px;
+}
+.negocios{
+    margin: 20px;
+    padding: 15px;
+}
+
+.negocios h4{
+    margin-left: 10px;
+}
+
+.para_voce{
+    margin: 20px;
+    padding: 15px;
+}
+
+.para_voce h4{
+    margin-left: 10px;
+}
+
+.atendimento h4{
+    margin-left: 10px;
+}
+
+.ofertas{
+    font-family:Arial, Helvetica, sans-serif;
+    width: 100%;
+    background-color: #016ea7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ofertas h4{
+    color: #fff;
+    font-size: 20px;
+    margin-right: 30px;
+}
+
+.ofertas input[type="submit"]{
+    background-color: #00AADB;
+    border-radius: 50px;
+    border: #016ea7;
+    width: 250px;
+    margin-left: 30px;
+}
+
+
+.passeios{
+    background-color: #f3f7f9;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+} .passeios li{
+    margin-left: 30px;
+}
+
+.passeios p{
+    margin-top: 20px;
+}
+
+.passeios h3{
+    margin: 10px;
+}
+
+
+
+.agrupamento_rodape{
+    height:auto;
+    background-color: #016ea7;
+    padding: auto;
+    display: flex;
+    justify-content:center;
+    width: 100%;
+}
+
+footer a{
+    margin: 20px;
+    text-align: center;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.form_login{
+    width: 500px;
+    margin: 5rem auto;
+}
+
+h1{
+    font-size: 2.1rem;
+    margin-bottom: 2rem;
+    color: #016ea7;
+}
+
+.agrupamento_login{
+    background-color: transparent;
+    color: #016ea7;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #016ea7;
+    padding: 8px;
+    box-shadow: 0px 1px 10px #016ea7;
+}
+
+label, input[type="text"], input[type="password"], input[type="submit"]{
+    font-size: 1.2rem;
+}
+
+input[type="text"], input[type="password"]{
+    color: black;
+    width: 300px;
+    padding: 1.0rem;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    border: 1px solid #016ea7;
+    border-radius: 8px;
+}
+input[type="submit"]{
+    color: #fff;
     width: 325px;
+    padding: 1.0rem;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #016ea7;
+    border: 0;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.logo_bc{
+    width: 250px;
+    align-items: center;
+    padding: 1rem;
+    padding-left: 0;
+    justify-content: center;
+}
+
+.logo_bc img{
+    margin-left: 40px;
+}
+/*Fim da tela de login*/
+
+/*tela de*/
+a{
+    text-decoration: none;
+}
+
+header{
+    background-color: #016ea7;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.logo_menu > img{
+    width: 100px;
+}
+
+.btn_abrir{
+    color: white;
+    font-size: 25px;
+}
+
+nav{
+    height: 100%;
+    width: 0px;
+    background-color: #016ea7;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+    transition: width 0.3s;
+}
+
+nav a{
+    color: white;
+    font-size: 25px;
+    display: block;
+    padding: 12px 10px 12px 32px;
+}
+
+nav a:hover{
+    color: #016ea7;
+    background-color:white;
+}
+
+main{
+    padding: 10px;
+    transition: margin-left 0.5s;
+
+}
+h1{
+    text-align: center;
+    color: #016ea7;
+}
+
+.botoes{
+    border: none;
+}
+
+.botoes{
+    border: none;
+}
+
+.form_cadastro{
+    width: 900px;
+    margin: 4.5rem auto;
+}
+
+.agrupamento_cadastro{
+    color: #016ea7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #016ea7;
+    padding: 5rem;
+    box-shadow: 0px 1px 10px #016ea7; 
+}
+
+.agrupamento_cadastro1{
+    margin-right: 10px;
+}
+
+.agrupamento_cadastro2{
+    margin-left: 10px;
+}
+
+.agrupamento_cadastro2 select{
+    color: black;
+    width: 330px;
+    padding: 15px;
+    margin-top: 1rem;
+    margin-bottom: 2.1rem;
+    border: 1px solid #016ea7;
+    border-radius: 8px;
+    font-size: 1.3rem;
+}
+
+
+.agrupamento_cadastro2 input[type="submit"]:hover{
+    background-color: #00AADB;
+}
+
+
+button{
+    padding-left:1px ;
+    margin-left: 5px;
+}
+
+.agrupamento_remover{
+    color: #016ea7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #016ea7;
+    padding: 5rem;
+    border-radius: 8px;
+    box-shadow: 0px 1px 10px #016ea7; 
+}
+
+.form_remover{
+    width: 460px;
+    margin: 7rem auto;
+
+}
+
+
+.agrupamento_atualizar{
+    color: #016ea7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #016ea7;
+    padding: 5rem;
+    box-shadow: 0px 1px 10px #016ea7; 
+}
+
+
+.agrupamento_atualizar2{
+    margin-top: 15px;
+}
+
+.agrupamento_atualizar1{
+    margin-right: 10px;
+}
+
+.agrupamento_atualizar2{
+    margin-left: 10px;
+}
+
+.agrupamento_atualizar2 select{
+    color: black;
+    width: 330px;
+    padding: 15px;
+    margin-top: 1.3rem;
+    margin-bottom: 2.1rem;
+    border: 1px solid #016ea7;
+    border-radius: 8px;
+    font-size: 1.3rem;
+}
+
+.agrupamento_atualizar input[type="submit"]{
+    margin-top: 45px;
+    margin-right: 40px;
+}
+
+
+.agrupamento_atualizar input[type="submit"]:hover{
+    background-color: #00AADB;
+}
+
+
+
+
+.form_atualizar{
+    width: 1200px;
+    margin: 3rem auto;
+
+}
+
+.agrupamento_consultar{
+    color: #016ea7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 15px;
+    border: 1px solid #016ea7;
+    padding: 5rem;
+    border-radius: 8px;
+    box-shadow: 0px 1px 10px #016ea7; 
+}
+
+.form_consultar{
+    width: 460px;
+    margin: 7rem auto;
+
+}
+
+
+/*css pagina inicial*/
+
+.pag_inicial{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pag_ini{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pag_cadastrar{
+    background-color: #fff;
+    color: #57C492;
+    display: flex;
+    width: 200px;
+    margin: 15px;
+    height: 100px;
+    margin-top: 80px;
+    margin-right: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #57C492;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 1px 10px #57C492;
+}
+
+.pag_atualizar{
+    background-color: #fff;
+    color: #57C492;
+    display: flex;
+    width: 200px;
+    margin: 15px;
+    height: 100px;
+    margin-top: 80px;
+    margin-left: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #57C492;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 1px 10px #57C492;
+}
+
+.pag_remover{
+    background-color: #fff;
+    color: #57C492;
+    display: flex;
+    width: 200px;
+    margin: 15px;
+    height: 100px;
+    margin-top: 30px;
+    margin-right: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #57C492;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 1px 10px #57C492;
+}
+
+.pag_consultar{
+    background-color: #fff;
+    color: #57C492;
+    display: flex;
+    width: 200px;
+    margin: 15px;
+    height: 100px;
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #57C492;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 1px 10px #57C492;
+}
+
+.btn_acessar{
+    color: #fff;
+    width: 100px;
     padding: 1.0rem;
     margin-top: 1.2rem;
     margin-bottom: 1.2rem;
@@ -102,57 +676,59 @@ input[type="submit"]{
     cursor: pointer;
 }
 
-.agrupamento_motos{
-    display: flex;
-    float: inline-end;
-   justify-content: center;
+
+.estila_tabela{
+
+	width: 1000px;
+	margin: 4rem auto;
+    box-shadow: 0px 1px 10px #016ea7; 
 
 }
 
-.moto1{
-    background-color:white;
-    color: black;
-    display: flex;
-    width: 200px;
-    margin: 15px;
-    height: 250px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    border: 1px solid gray;
-    padding: 5rem;
-    border-radius: 8px;
-    box-shadow: 0px 1px 10px gray;
+.estila_tabela > div > h1{
+
+	font-size: 2rem;
 }
 
-.moto2{
-    background-color:white;
-    color: black;
-    display: flex;
-    width: 200px;
-    margin: 15px;
-    height: 250px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    border: 1px solid gray;
-    padding: 5rem;
-    border-radius: 8px;
-    box-shadow: 0px 1px 10px gray;
+table{
+
+	width: 100%;
+
 }
 
-.moto3{
-    background-color:white;
-    color: black;
-    display: flex;
-    width: 200px;
-    margin: 15px;
-    height: 250px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    border: 1px solid gray;
-    padding: 5rem;
-    border-radius: 8px;
-    box-shadow: 0px 1px 10px gray;
+.tabela_cabecalho{
+	font-weight: 600;
+	height: 3rem;
+    background-color: #016ea7;
+    color: #fff;
 }
+
+td{
+    padding: 10px;
+	font-size: 1.4rem;
+	border-bottom: 1px solid #016ea7;
+	text-align: center;
+	
+
+	
+}
+
+
+.agrupamento_botao_acao{
+	
+	display:flex;
+	flex-direction:column;
+	justify-content: space-between;	
+	align-items: center;
+}
+
+.botao_acao{
+	
+	width: 35px;
+	cursor:pointer;
+	margin-top: 0.2rem;
+	margin-bottom: 0.2rem;
+	
+
+}
+

@@ -1,21 +1,20 @@
-<?php
-$servidor = "localhost";
-$usuario = "root";
-$senha = "12345";
-$db_name = "locadora";
+<?php //session_start();
 
-$conexão = mysqli_connect($servidor, $usuario, $senha, $db_name) or die( 'Banco de dados Indisponivel.');
+	$servidor = "localhost";
+	$usuario = "root";
+	$senha = "";
+	$db_name = "db_locadora";
+	
+	
+	$conexao = mysqli_connect($servidor, $usuario, $senha, $db_name) or die('Banco de dados indisponível.');
+	
+	date_default_timezone_set("America/Manaus");
+	
+	$host_ip = $_SERVER['HTTP_HOST'];
+	
+	$url = "http://".$host_ip."/locadora";
 
-date_default_timezone_set("America/Manaus");
+	$url_admin = "http://".$host_ip."/locadora/admin";
 
-$host_ip = $_SERVER['HTTP_HOST'];
-
-$url = "http://".$host_ip."/projeto locadora"; 
-
-$url_admin = "http://".$host_ip."/projeto locadora/admin";
-
-//$url_aluno = "http://".$host_ip."/portal/aluno";
-
-
-
+	
 ?>
