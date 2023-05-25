@@ -6,8 +6,9 @@
 	$db_name = "railway";
 
 
-	
-	$conexao = mysqli_connect($servidor, $usuario, $senha, $db_name) or die('Banco de dados indisponível.');
+
+	 $conexao = new PDO("pgsql:host=containers-us-west-122.railway.app;port=;dbname=railway;user=root;password=IH17yp9oEYfqIdbXZVil");
+
 
 	date_default_timezone_set("America/Manaus");
 	
