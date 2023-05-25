@@ -1,9 +1,9 @@
 <?php //session_start();
 
-	$servidor = "containers-us-west-122.railway.app";
+	$servidor = "localhost";
 	$usuario = "root";
-	$senha = "IH17yp9oEYfqIdbXZVil";
-	$db_name = "railway";
+	$senha = "";
+	$db_name = "db_locadora";
 	
 	
 	$conexao = mysqli_connect($servidor, $usuario, $senha, $db_name) or die('Banco de dados indisponível.');
