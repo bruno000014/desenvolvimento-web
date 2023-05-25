@@ -7,7 +7,7 @@
 
 
 	 // Conexão BD Postgres com PDO
-	 $conexao = new PDO("pgsql:host=containers-us-west-27.railway.app;port=;dbname=railway;user=root;password=rYH5C45Jozz5Ffsz6STm") or die ('Banco de dados indisponivel');
+	$conexao = mysqli_connect($servidor, $usuario, $senha, $db_name) or die('Banco de dados indisponível.');
 	
 	$host_ip = $_SERVER['HTTP_HOST'];
 	
