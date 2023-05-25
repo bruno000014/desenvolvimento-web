@@ -8,11 +8,12 @@
 		$nome_login = $_POST['nome_login'];
 		$senha_login = $_POST['senha_login'];
 	
-		$sql_valida_login = mysqli_query($pdo,"SELECT * FROM login WHERE nome_login = '".$nome_login."' AND senha_login = '".$senha_login."'");
-		
-		if(mysqli_num_rows($sql_valida_login) > 0){
+		$consulta = $pdo->query("SELECT * FROM login where nome_login, senha_login;");
+
+
+		if(mysqli_num_rows($consulta) > 0){
 	
-			$registros_login = mysqli_fetch_assoc($sql_valida_login);
+			$registros_login = mysqli_fetch_assoc($consulta);
 				 
 			$_SESSION['nome_completo_login'] = $registros_login['nome_completo_login'];
 			$_SESSION['nome_login'] = $registros_login['nome_login'];
