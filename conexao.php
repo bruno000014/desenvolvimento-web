@@ -6,9 +6,8 @@
 	$db_name = "railway";
 
 
-	$conexao = pg_connect($servidor, $usuario, $senha, $db_name) or die('Banco de dados indisponível.');
-
-	date_default_timezone_set("America/Manaus");	
+	 // Conexão BD Postgres com PDO
+	 $conexao = new PDO("$servidor, $usuario, $senha, $dbname")or die ('Banco de dados indisponivel');
 	
 	$host_ip = $_SERVER['HTTP_HOST'];
 	
