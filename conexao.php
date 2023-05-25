@@ -1,8 +1,8 @@
 <?php //session_start();
 
-	$servidor = "containers-us-west-132.railway.app";
+	$servidor = "containers-us-west-122.railway.app";
 	$usuario = "root";
-	$senha = "GBrR82U3nUmqiboGbxKM";
+	$senha = "IH17yp9oEYfqIdbXZVil";
 	$db_name = "railway";
 	
 	
