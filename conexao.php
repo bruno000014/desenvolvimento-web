@@ -1,18 +1,14 @@
 <?php //session_start();
 
-$host = 'containers-us-west-122.railway.app';
-$port = '8069';
-$db   = 'railway';
-$user = 'root';
-$pass = 'IH17yp9oEYfqIdbXZVil';
-$charset = 'utf8mb4';
+	$servidor = "containers-us-west-27.railway.app";
+	$usuario = "root";
+	$senha = "rYH5C45Jozz5Ffsz6STm";
+	$db_name = "railway";
 
-$dsn = "mysql:host=$host;dbname=$db;charset=$charset;port=$port";
-try {
-    $pdo = new \PDO($dsn, $user, $pass);
-} catch (\PDOException $e) {
-    throw new \PDOException($e->getMessage(), (int)$e->getCode());
-}
+
+	$conexao = pg_connect($servidor, $usuario, $senha, $db_name) or die('Banco de dados indisponível.');
+
+	date_default_timezone_set("America/Manaus");	
 	
 	$host_ip = $_SERVER['HTTP_HOST'];
 	
