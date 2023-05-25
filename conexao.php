@@ -6,7 +6,7 @@
 	$db_name = "db_locadora";
 
 
-	$conexao = pg_connect($servidor, $usuario, $senha, $db_name) or die('Banco de dados indisponível.');
+	$conexao = mysqli_connect($servidor, $usuario, $senha, $db_name) or die('Banco de dados indisponível.');
 
 	date_default_timezone_set("America/Manaus");	
 	
