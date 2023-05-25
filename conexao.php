@@ -7,7 +7,12 @@ $user = 'root';
 $pass = 'IH17yp9oEYfqIdbXZVil';
 $charset = 'utf8mb4';
 
-	$conexao = mysqli_connect($host, $user, $pass, $port, $db) or die('Banco de dados indisponível.');
+$dsn = "mysql:host=$host;dbname=$db;charset=$charset;port=$port";
+try {
+    $pdo = new \PDO($dsn, $user, $pass, $options);
+} catch (\PDOException $e) {
+    throw new \PDOException($e->getMessage(), (int)$e->getCode());
+}
 	
 	$host_ip = $_SERVER['HTTP_HOST'];
 	

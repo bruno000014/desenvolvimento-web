@@ -5,7 +5,7 @@
         $codigo_carro = $_GET['codigo_carro'];
 
 
-        $select_carro = mysqli_query($conexao, "SELECT * FROM carro WHERE codigo_carro = $codigo_carro");
+        $select_carro = mysqli_query($pdo, "SELECT * FROM carro WHERE codigo_carro = $codigo_carro");
 				
 	
 	        if (mysqli_num_rows($select_carro) > 0) {

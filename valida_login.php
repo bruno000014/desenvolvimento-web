@@ -8,7 +8,7 @@
 		$nome_login = $_POST['nome_login'];
 		$senha_login = $_POST['senha_login'];
 	
-		$sql_valida_login = mysqli_query($conexao,"SELECT * FROM login WHERE nome_login = '".$nome_login."' AND senha_login = '".$senha_login."'");
+		$sql_valida_login = mysqli_query($pdo,"SELECT * FROM login WHERE nome_login = '".$nome_login."' AND senha_login = '".$senha_login."'");
 		
 		if(mysqli_num_rows($sql_valida_login) > 0){
 	

@@ -8,7 +8,7 @@
 	$delete_carro = "DELETE FROM carro WHERE codigo_carro = $codigo_carro";
 	
 	
-		if (mysqli_query($conexao,$delete_carro)) {
+		if (mysqli_query($pdo,$delete_carro)) {
 
 				mysqli_close($conexao);
 
@@ -22,7 +22,7 @@
 
 				echo "<script> window.location.href='$url_admin';</script>";
 				
-				mysqli_close($conexao);
+				mysqli_close($pdo);
 			}
 	
 
