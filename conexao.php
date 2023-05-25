@@ -8,6 +8,8 @@
 
 	 // Conexão BD Postgres com PDO
 	$conexao = mysqli_connect($servidor, $usuario, $senha, $db_name) or die('Banco de dados indisponível.');
+
+	date_default_timezone_set("America/Manaus");
 	
 	$host_ip = $_SERVER['HTTP_HOST'];
 	
