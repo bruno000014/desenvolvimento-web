@@ -1,14 +1,18 @@
 <?php //session_start();
 
-	$servidor = "localhost";
-	$usuario = "root";
-	$senha = "";
-	$db_name = "db_locadora";
-	
-	
-	$conexao = mysqli_connect($servidor, $usuario, $senha, $db_name) or die('Banco de dados indisponível.');
-	
-	date_default_timezone_set("America/Manaus");
+$host = 'containers-us-west-122.railway.app';
+$port = '8069';
+$db   = 'railway';
+$user = 'root';
+$pass = 'IH17yp9oEYfqIdbXZVil';
+$charset = 'utf8mb4';
+
+$dsn = "mysql:host=$host;dbname=$db;charset=$charset;port=$port";
+try {
+    $pdo = new \PDO($dsn, $user, $pass, $options);
+} catch (\PDOException $e) {
+    throw new \PDOException($e->getMessage(), (int)$e->getCode());
+}
 	
 	$host_ip = $_SERVER['HTTP_HOST'];
 	
