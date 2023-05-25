@@ -8,7 +8,7 @@
 		$nome_login = $_POST['nome_login'];
 		$senha_login = $_POST['senha_login'];
 	
-		$consulta = $pdo->query("SELECT * FROM login where nome_login, senha_login;");
+		$consulta = $pdo->query("SELECT * FROM login where nome_login, senha_login");
 
 
 		if(mysqli_num_rows($consulta) > 0){
