@@ -1,12 +1,20 @@
 <?php //session_start();
+	require ('.env')
 	
-	$servidor = "dpg-cho2dog2qv295pt6kugg-a";
-	$usuario = "db_locadora_user";
-	$senha = "fxaoK5vNVmUtNbxeDlkw3SwPV059IHio";
-	$db_name = "db_locadora";
+	$host = getenv('DB_HOST');
+	$port = getenv('DB_PORT');
+	$database = getenv('DB_DATABASE');
+	$username = getenv('DB_USERNAME');
+	$password = getenv('DB_PASSWORD');
 
+// Conexão com o banco de dados
+$conexao = new mysqli($host, $username, $password, $database, $port);
 
-	$conexao = pg_connect($servidor, $usuario, $senha, $db_name) or die('Banco de dados indisponível.');
+// Verificar a conexão
+if ($conexao->connect_error) {
+    die("Falha na conexão: " . $conexao->connect_error);
+}
+
 
 	date_default_timezone_set("America/Manaus");	
 	
