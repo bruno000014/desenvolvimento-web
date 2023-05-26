@@ -10,7 +10,7 @@
 
 	date_default_timezone_set("America/Manaus");	
 	
-	$host_ip = $_SERVER['HOST'];
+	$host_ip = $_SERVER['MYSQLHOST'];
 	
 	$url = "http://".$host_ip."/locadora";
 
