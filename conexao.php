@@ -1,17 +1,9 @@
 <?php //session_start();
 	
-$servername = "containers-us-west-122.railway.app";
-$username = "root";
-$password = "IH17yp9oEYfqIdbXZVil";
-$dbname = "railway";
-
-// Cria a conexão
-$conexao = new mysqli($servername, $username, $password, $dbname);
-
-// Verifica se a conexão foi estabelecida com sucesso
-if ($conexao->connect_error) {
-    die("Falha na conexão: " . $conn->connect_error);
-}
+	<?php
+	$dsn = 'mysql:host=containers-us-west-122.railway.app;port=8069;dbname=railway';
+	$dbh = new PDO($dsn, 'root', 'IH17yp9oEYfqIdbXZVil');
+	?>
 
 // Resto do seu código PHP...
 
