@@ -1,5 +1,5 @@
 <?php //session_start();
-	$db_url = "mysql://root:IH17yp9oEYfqIdbXZVil@containers-us-west-122.railway.app:8069/railway"
+	$db_url = "mysql://root:IH17yp9oEYfqIdbXZVil@containers-us-west-122.railway.app:8069/railway";
 	$servidor = "containers-us-west-122.railway.app";
 	$usuario = "root";
 	$senha = "IH17yp9oEYfqIdbXZVil";
