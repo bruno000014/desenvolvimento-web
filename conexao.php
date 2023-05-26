@@ -1,5 +1,5 @@
 <?php //session_start();
-	require ('.env')
+	require ('.env');
 	
 	$host = getenv('DB_HOST');
 	$port = getenv('DB_PORT');
