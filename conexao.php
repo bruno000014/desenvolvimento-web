@@ -1,9 +1,7 @@
 <?php //session_start();
 	
-	<?php
 	$dsn = 'mysql:host=containers-us-west-122.railway.app;port=8069;dbname=railway';
 	$dbh = new PDO($dsn, 'root', 'IH17yp9oEYfqIdbXZVil');
-	?>
 
 // Resto do seu código PHP...
 
