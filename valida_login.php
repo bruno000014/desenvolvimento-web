@@ -8,9 +8,9 @@
 		$nome_login = $_POST['nome_login'];
 		$senha_login = $_POST['senha_login'];
 	
-		$sql_valida_login = $dbh->query("SELECT * FROM login WHERE nome_login = '".$nome_login."' AND senha_login = '".$senha_login."'");
+		$sql_valida_login = mysqli_query("SELECT * FROM login WHERE nome_login = '".$nome_login."' AND senha_login = '".$senha_login."'");
 		
-		if(rowcount($sql_valida_login) > 0){
+		if(fetchall($sql_valida_login) > 0){
 	
 			$registros_login = mysqli_fetch_assoc($sql_valida_login);
 				 

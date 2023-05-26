@@ -1,9 +1,12 @@
 <?php //session_start();
 	
-	$dsn = 'mysql:host=containers-us-west-122.railway.app;port=8069;dbname=railway';
-	$dbh = new PDO($dsn, 'root', 'IH17yp9oEYfqIdbXZVil');
-
-// Resto do seu código PHP...
+	$servidor = "containers-us-west-122.railway.app";
+	$usuario = "root";
+	$senha = "IH17yp9oEYfqIdbXZVil";
+	$db_name = "railway";
+	
+	
+	$conexao = mysqli_connect($servidor, $usuario, $senha, $db_name) or die('Banco de dados indisponível.');
 
 
 	date_default_timezone_set("America/Manaus");	
