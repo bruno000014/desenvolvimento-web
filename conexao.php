@@ -18,7 +18,7 @@ if ($conexao->connect_error) {
 
 	date_default_timezone_set("America/Manaus");	
 	
-	$host_ip = $_SERVER['MYSQLHOST'];
+	$host_ip = $_SERVER['HTTP_SERVER'];
 	
 	$url = "http://".$host_ip."/locadora";
 
