@@ -8,7 +8,7 @@
 		$nome_login = $_POST['nome_login'];
 		$senha_login = $_POST['senha_login'];
 	
-		$sql_valida_login = $dsh->query("SELECT * FROM login WHERE nome_login = '".$nome_login."' AND senha_login = '".$senha_login."'");
+		$sql_valida_login = $dsn->query("SELECT * FROM login WHERE nome_login = '".$nome_login."' AND senha_login = '".$senha_login."'");
 		
 		if(mysqli_num_rows($sql_valida_login) > 0){
 	
