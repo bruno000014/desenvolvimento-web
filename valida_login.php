@@ -10,7 +10,7 @@
 	
 		$sql_valida_login = mysqli_query("SELECT * FROM login WHERE nome_login = '".$nome_login."' AND senha_login = '".$senha_login."'");
 		
-		if(fetchall($sql_valida_login) > 0){
+		if(mysql_num_rows($sql_valida_login) > 0){
 	
 			$registros_login = mysqli_fetch_assoc($sql_valida_login);
 				 
