@@ -21,7 +21,7 @@
 
 			$_SESSION['url'] = $url;
 			$_SESSION['url_admin'] = $url_admin;
-			$_SESSION['url_aluno'] = $url_cliente;
+
 					
 			
 				if($_SESSION['tipo_login'] == 0){
