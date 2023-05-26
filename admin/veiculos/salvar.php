@@ -20,9 +20,9 @@
 		$update_carro = "UPDATE carro SET marca = '".$marca."', modelo = '".$modelo."', ano = '".$ano."', descricao = '".$descricao."', tipo_carro = '".$tipo_carro."'WHERE codigo_carro = $codigo_carro";
 	
 	
-		if (mysqli_query($pdo,$update_carro)) {
+		if (mysqli_query($conexao,$update_carro)) {
 
-				mysqli_close($pdo);
+				mysqli_close($conexao);
 
 				echo "<script> alert ('CARRO ATUALIZADO COM SUCESSO!');</script>";
 
@@ -34,7 +34,7 @@
 
 				echo "<script> window.location.href='$url_admin';</script>";
 				
-				mysqli_close($pdo);
+				mysqli_close($conexao);
 			}
 
 	}else if (isset($_POST['marca'])) {      
@@ -53,9 +53,9 @@
 		$insert_carro = "INSERT INTO carro (marca, modelo, ano, descricao, tipo_carro) VALUES ('".$marca."', '".$modelo."', '".$ano."','".$descricao."','".$tipo_carro."')";
 	
 	
-		if (mysqli_query($pdo,$insert_carro)) {
+		if (mysqli_query($conexao,$insert_carro)) {
 
-				mysqli_close($pdo);
+				mysqli_close($conexao);
 
 				echo "<script> alert ('CARRO CADASTRADO COM SUCESSO!');</script>";
 
@@ -67,7 +67,7 @@
 
 				echo "<script> window.location.href='$url_admin';</script>";
 				
-				mysqli_close($pdo);
+				mysqli_close($conexao);
 			}
 
 	} 

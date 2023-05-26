@@ -3,7 +3,7 @@
     require('../../conexao.php');
 
 
-	    $select_carro = mysqli_query($pdo, "SELECT * FROM carro ORDER BY codigo_carro ASC");
+	    $select_carro = mysqli_query($conexao, "SELECT * FROM carro ORDER BY codigo_carro ASC");
 				
 	
 		    if (mysqli_num_rows($select_carro) > 0) {
