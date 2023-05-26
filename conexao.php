@@ -12,7 +12,7 @@
 
 	date_default_timezone_set("America/Manaus");	
 	
-	$host_ip = $_SERVER['HTTP_HOST'];
+	$host_ip = $_SERVER['containers-us-west-122.railway.app'];
 	
 	$url = "http://".$host_ip."/locadora";
 
