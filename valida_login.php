@@ -15,9 +15,6 @@
 
     	$sql_valida_login = $conexao->query('SELECT * FROM login WHERE nome_login = ' . $conexao->quote($nome_login) and senha_login .$conexao->quote($senha_login));
 
-    	foreach($data as $row) {
-        	print_r($row);
-    	}
 	} catch(PDOException $e) {
     	echo 'ERROR: ' . $e->getMessage();
 	}
