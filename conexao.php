@@ -1,19 +1,19 @@
 <?php //session_start();
-	require ('.env');
 	
-	$host = getenv('DB_HOST');
-	$port = getenv('DB_PORT');
-	$database = getenv('DB_DATABASE');
-	$username = getenv('DB_USERNAME');
-	$password = getenv('DB_PASSWORD');
+$servername = "containers-us-west-122.railway.app";
+$username = "root";
+$password = "IH17yp9oEYfqIdbXZVil";
+$dbname = "railway";
 
-// Conexão com o banco de dados
-$conexao = new mysqli($host, $username, $password, $database, $port);
+// Cria a conexão
+$conexao = new mysqli($servername, $username, $password, $dbname);
 
-// Verificar a conexão
+// Verifica se a conexão foi estabelecida com sucesso
 if ($conexao->connect_error) {
-    die("Falha na conexão: " . $conexao->connect_error);
+    die("Falha na conexão: " . $conn->connect_error);
 }
+
+// Resto do seu código PHP...
 
 
 	date_default_timezone_set("America/Manaus");	
