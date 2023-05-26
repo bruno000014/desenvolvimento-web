@@ -8,7 +8,19 @@
 		$nome_login = $_POST['nome_login'];
 		$senha_login = $_POST['senha_login'];
 	
-		$sql_valida_login = mysqli_query($conexao,"SELECT * FROM login WHERE nome_login = '".$nome_login."' AND senha_login = '".$senha_login."'");
+		
+	try {
+    	$conexao = new PDO('mysql:host=containers-us-west-122.railway.app;dbname=railway', $username, $password);
+    	$conexao->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    	$sql_valida_login = $conexao->query('SELECT * FROM login WHERE nome_login = ' . $conexao->quote($nome_login)senha_login = .$conexao->quote($senha_login));
+
+    	foreach($data as $row) {
+        	print_r($row);
+    	}
+	} catch(PDOException $e) {
+    	echo 'ERROR: ' . $e->getMessage();
+	}
 		
 		if(mysqli_num_rows($sql_valida_login) > 0){
 	
