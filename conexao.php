@@ -1,9 +1,9 @@
 <?php //session_start();
 
-	$servidor = "aws.connect.psdb.cloud";
-	$usuario = "lrcvy2bde8tnhse6jtxl";
-	$senha = "pscale_pw_xODbiGRKrISOd2aV6nWeK34npwHGYsoqZj39OEBgHaj";
-	$db_name = "db_locadora_soyw";
+	$servidor = "containers-us-west-122.railway.app";
+	$usuario = "root";
+	$senha = "IH17yp9oEYfqIdbXZVil";
+	$db_name = "railway";
 	
 	
 	$conexao = mysqli_connect($servidor, $usuario, $senha, $db_name) or die('Banco de dados indisponível.');
