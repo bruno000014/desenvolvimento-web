@@ -1,4 +1,4 @@
-<?php require('.env') //session_start();
+<?php require('.env'); //session_start();
 
 
 	$mysqli = mysqli_init();
