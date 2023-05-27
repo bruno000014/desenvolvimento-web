@@ -1,16 +1,16 @@
 <?php //session_start();
 
-	$servidor = "localhost";
+	$servidor = "containers-us-west-122.railway.app";
 	$usuario = "root";
-	$senha = "";
-	$db_name = "db_locadora";
+	$senha = "IH17yp9oEYfqIdbXZVil";
+	$db_name = "railway";
 	
 	
 	$conexao = mysqli_connect($servidor, $usuario, $senha, $db_name) or die('Banco de dados indisponível.');
 	
 	date_default_timezone_set("America/Manaus");
 	
-	$host_ip = $_SERVER['HTTP_HOST'];
+	$host_ip = $_SERVER['HTTP_SERVER'];
 	
 	$url = "http://".$host_ip."/locadora";
 
