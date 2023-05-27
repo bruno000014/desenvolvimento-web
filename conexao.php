@@ -1,4 +1,5 @@
-<?php //session_start();
+<?php require('.env') //session_start();
+
 
 	$mysqli = mysqli_init();
 	$mysqli->ssl_set(NULL, NULL, "/etc/ssl/certs/ca-certificates.crt", NULL, NULL);
