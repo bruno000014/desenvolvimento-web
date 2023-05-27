@@ -16,8 +16,8 @@
             <div class="agrupamento_login">
 
                 <div class="logo_bc">
-                    <div><img src="../../imagens/logo_login.png" width="170px"></div>
-                    <h2>B&C Rent A Car</h2>
+                    <div><img src="../../imagens/logo_login.png" width="150px"></div>
+                    <div><h2>B&C Rent A Car</h2></div>
                 
                 </div>
                 

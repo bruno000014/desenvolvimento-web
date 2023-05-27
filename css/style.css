@@ -19,6 +19,8 @@ header{
     
 }
 
+
+
 .user{
     color: #fff;
     align-items: center;
@@ -47,8 +49,8 @@ h2{
 }
 
 .form_retirada{
-    width: 1000px;
-    margin: 4rem auto;
+    width: 70vw;
+    margin: 20px auto;
     justify-content: center;
     align-items: center;
 
@@ -66,6 +68,7 @@ h2{
     padding: 3rem;
     box-shadow: 0px 1px 10px #016ea7; 
     align-items: center;
+    flex-wrap: wrap;
 }
 .date{
     width: 50px;
@@ -81,6 +84,7 @@ h2{
     border: 1px solid #016ea7;
     border-radius: 8px;
     margin: 5px;
+    
 }
 
 .date_time{
@@ -90,9 +94,10 @@ h2{
 }
 .agrupamento_carros{
     display: flex;
-    align-items: center;
-   justify-content: center;
+    width: 98vw;
+    margin: auto;
    margin: 30px;
+   flex-wrap: wrap;
 }
 
 .agrupamento_carros p{
@@ -218,7 +223,8 @@ h3{
     align-items: center;
     display: flex;
     padding: 10px;
-    width: 100%;
+    width: 98vw;
+    flex-wrap: wrap;
 }
 
 .institucional{
@@ -253,11 +259,12 @@ h3{
 
 .ofertas{
     font-family:Arial, Helvetica, sans-serif;
-    width: 100%;
+    width: 100vw;
     background-color: #016ea7;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .ofertas h4{
@@ -280,7 +287,11 @@ h3{
     padding: 20px;
     align-items: center;
     justify-content: center;
-} .passeios li{
+    width: 98vw;
+
+} 
+
+.passeios li{
     margin-left: 30px;
 }
 
@@ -309,17 +320,16 @@ footer a{
 }
 
 
-*{
-    margin: 0;
-    padding: 0;
-}
+
 .form_login{
-    width: 500px;
-    margin: 5rem auto;
+    width: 800px;
+    margin: auto;
+    margin-top: 10vh;
 }
 
-h1{
-    font-size: 2.1rem;
+.agrupamento_login> h2{
+    text-align: center;
+    font-size: 2rem;
     margin-bottom: 2rem;
     color: #016ea7;
 }
@@ -329,11 +339,11 @@ h1{
     color: #016ea7;
     display: flex;
     height: auto;
-    flex-direction: column;
+    columns: 2;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     border: 1px solid #016ea7;
-    padding: 8px;
+    padding: 30px;
     box-shadow: 0px 1px 10px #016ea7;
 }
 

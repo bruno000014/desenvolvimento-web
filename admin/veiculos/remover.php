@@ -22,7 +22,7 @@
 
 				echo "<script> window.location.href='$url_admin';</script>";
 				
-				mysqli_close($pdo);
+				mysqli_close($conexao);
 			}
 	
 
