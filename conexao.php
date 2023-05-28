@@ -7,7 +7,7 @@
 
 	$conexao = mysqli_connect($host, $usuario, $senha, $db_name) or die ('Banco de dados indisponivel');
 
-	date_default_timezone_set("America/Manaus");
+	
 	
 	$host_ip = $_SERVER['HTTP_HOST'];
 	
