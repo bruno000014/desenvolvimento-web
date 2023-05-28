@@ -1,13 +1,11 @@
 <?php
 
-	$host = "aws.connect.psdb.cloud";
-	$usuario = "kea1agnb8ukfk26ftjo6";
-	$senha = "pscale_pw_dTcD6oCDULmFoDFdIBBwbyvTBa3mYiYbumQZklbLQmp";
-	$db_name = "db_locadora";
+	$host = "containers-us-west-122.railway.app";
+	$usuario = "root";
+	$senha = "IH17yp9oEYfqIdbXZVil";
+	$db_name = "railway";
 
-	$mysqli = mysqli_init();
-  	$mysqli->ssl_set(NULL, NULL, "/etc/ssl/certs/ca-certificates.crt", NULL, NULL);
-  	$mysqli->real_connect($host, $usuario, $senha, $db_name);
+	$conexao = mysqli_connect($host, $usuario, $senha, $db_name) or die ('Banco de dados indisponivel');
 
 	date_default_timezone_set("America/Manaus");
 	
