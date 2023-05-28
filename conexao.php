@@ -5,7 +5,9 @@
 	$senha = "pscale_pw_dTcD6oCDULmFoDFdIBBwbyvTBa3mYiYbumQZklbLQmp";
 	$db_name = "db_locadora";
 
-	$conexao = mysqli_connect($host, $usuario, $senha, $db_name) or die ('Banco de dados indisponivel');
+	$mysqli = mysqli_init();
+  	$mysqli->ssl_set(NULL, NULL, "/etc/ssl/certs/ca-certificates.crt", NULL, NULL);
+  	$mysqli->real_connect($host, $usuario, $senha, $db_name;
 
 	date_default_timezone_set("America/Manaus");
 	
