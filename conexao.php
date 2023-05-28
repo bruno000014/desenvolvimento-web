@@ -1,11 +1,11 @@
-<?php require('.env'); //session_start();
+<?php
 
+	$host = "containers-us-west-122.railway.app";
+	$usuario = "root";
+	$senha = "IH17yp9oEYfqIdbXZVil";
+	$db_name = "railway";
 
-	$conexao = mysqli_init();
-	$conexao->ssl_set(NULL, NULL, "/etc/ssl/certs/ca-certificates.crt", NULL, NULL);
-	$conexao->real_connect($_ENV["HOST"], $_ENV["USERNAME"], $_ENV["PASSWORD"], $_ENV["DATABASE"]);
-
-	date_default_timezone_set("America/Manaus");
+	$conexao = mysqli_connect($host, $usuario, $senha, $db_name) or die ('Banco de dados indisponivel');
 	
 	$host_ip = $_SERVER['HTTP_HOST'];
 	
