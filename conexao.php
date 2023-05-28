@@ -9,7 +9,7 @@
 
 	
 	
-	$host_ip = $_SERVER['HTTP_REMOTE_ADDR'];
+	$host_ip = $_SERVER['REMOTE_ADDR'];
 	
 	$url = "http://".$host_ip."/locadora";
 
