@@ -1,13 +1,9 @@
 <?php
 
-    $host = "dpg-choob6ndvk4goes22ijg-a";
-    $user = "db_locadora_soyw_user
-
-    ";
-    $senha = "ly5wVeiNtFt3OnypHBrwryYcbeyiL873";
-    $banco = "db_locadora_soyw
-
-    ";
+    $host = "localhost";
+    $user = "root";
+    $senha = "";
+    $banco = "db_locadora";
 
     global $pdo;
 
