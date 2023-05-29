@@ -1,11 +1,22 @@
 <?php
 
-	$host = "containers-us-west-122.railway.app";
-	$usuario = "root";
-	$senha = "IH17yp9oEYfqIdbXZVil";
-	$db_name = "railway";
+	$host = 'containers-us-west-122.railway.app';
+	$port = '8069';
+	$db   = 'railway';
+	$user = 'root';
+	$pass = 'IH17yp9oEYfqIdbXZVil';
+	$charset = 'utf8mb4';
 
-	$conexao = mysqli_connect($host, $usuario, $senha, $db_name) or die ('Banco de dados indisponivel');
+	$options    = array(
+		PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
+	  );
+
+	$dsn = "mysql:host=$host;dbname=$db;charset=$charset;port=$port";
+	try {
+    	$pdo = new \PDO($dsn, $user, $pass, $options);
+} 	catch (\PDOException $e) {
+    	throw new \PDOException($e->getMessage(), (int)$e->getCode());
+}
 
 	
 	
