@@ -12,7 +12,7 @@
 		
 		if($sql_valida_login->rowCount() > 0){
 	
-			$registros_login = $pdo->fetch($sql_valida_login);
+			$registros_login = $pdo->fetchAll($sql_valida_login);
 				 
 			$_SESSION['nome_completo_login'] = $registros_login['nome_completo_login'];
 			$_SESSION['nome_login'] = $registros_login['nome_login'];
