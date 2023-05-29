@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="../../imagens/fav.ico" type="image/x-icon">
 </head>
 <body class="body_login"> 
-        <form id="form_login" name="form_login" class="form_login" method="post" action="../../valida_login.php">
+        <form id="form_login" name="form_login" class="form_login" method="post" action="../../validacao.php">
 
             
 
