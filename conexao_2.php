@@ -1,9 +1,9 @@
 <?php
 
-    $host = "containers-us-west-122.railway.app";
-    $user = "root";
-    $senha = "IH17yp9oEYfqIdbXZVil";
-    $banco = "railway";
+    $host = "aws.connect.psdb.cloud";
+    $user = "2zxpjklkmlbh5waf37g1";
+    $senha = "pscale_pw_sHJTuYNYDFxw72ia0alzOURpm5miKTOxfd6mr7JfJjx";
+    $banco = "db_locadora";
 
     global $pdo;
 
