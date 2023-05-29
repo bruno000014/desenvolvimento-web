@@ -10,7 +10,7 @@
 	
 		$sql_valida_login = $pdo->query("SELECT * FROM login WHERE nome_login = '".$nome_login."' AND senha_login = '".$senha_login."'");
 		
-		if(mysqli_num_rows($sql_valida_login) > 0){
+		if(rowCount($sql_valida_login) > 0){
 	
 			$registros_login = $pdo->fetch($sql_valida_login);
 				 
