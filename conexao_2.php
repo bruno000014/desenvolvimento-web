@@ -1,9 +1,13 @@
 <?php
 
-    $host = "aws.connect.psdb.cloud";
-    $user = "2zxpjklkmlbh5waf37g1";
-    $senha = "pscale_pw_sHJTuYNYDFxw72ia0alzOURpm5miKTOxfd6mr7JfJjx";
-    $banco = "db_locadora";
+    $host = "dpg-choob6ndvk4goes22ijg-a";
+    $user = "db_locadora_soyw_user
+
+    ";
+    $senha = "ly5wVeiNtFt3OnypHBrwryYcbeyiL873";
+    $banco = "db_locadora_soyw
+
+    ";
 
     global $pdo;
 
