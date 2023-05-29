@@ -1,9 +1,9 @@
 <?php
 
-    $host = "localhost";
+    $host = "containers-us-west-122.railway.app";
     $user = "root";
-    $senha = "";
-    $banco = "db_locadora";
+    $senha = "IH17yp9oEYfqIdbXZVil";
+    $banco = "railway";
 
     global $pdo;
 
